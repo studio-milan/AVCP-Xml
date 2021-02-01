@@ -109,7 +109,7 @@ $xml = new DOMDocument();
 $xml->preserveWhiteSpace = false;
 $xml->formatOutput = true;
 $xml->loadXML($XML_TOT);
-if ($xml->schemaValidate('./datasetAppaltiL190.xsd')) {
+if ($xml->schemaValidate('https://dati.anticorruzione.it/schema/datasetAppaltiL190.xsd')) {
     echo '
     <div class="alert alert-success">
         <strong>Il documento è corretto.</strong>
